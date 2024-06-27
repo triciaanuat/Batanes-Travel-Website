@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tricia's Travel Escapes</title>
+    <link rel="stylesheet" href="./about.css">
+</head>
+<body>
+    
+    <nav>
+
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="services.html">Services</a>
+        <a href="contacts.html">Contacts</a>
+    </nav>
+    <div class="container">
+        <video src="./batanes lighthouses.mp4" class="slider" autoplay loop muted controls></video>
+
+        <ul>
+            <li onclick="videoslider('./Batanes in Motion - A Cinematic Travel Video.mp4')"><video src="./Batanes in Motion - A Cinematic Travel Video.mp4"></video></li>
+            <li onclick="videoslider('././Batanes Philippines.mp4')"><video src="./Batanes Philippines.mp4"></video></li>
+            <li onclick="videoslider('./BATANES, PHILIPPINES _ Promotional Video.mp4')"><video src="./BATANES, PHILIPPINES _ Promotional Video.mp4"></video></li>
+            
+        </ul>
+    </div>
+    
+    <p>At Tricia's Travel Escape, we believe that every journey should be an unforgettable escape filled with discovery, relaxation, and joy. Whether you're dreaming of a serene beach retreat, an adventurous trek through breathtaking landscapes, or a culturally enriching city tour, our mission is to turn your travel dreams into reality.</p>
+
+    <script>
+
+        function videoslider(links){
+            document.querySelector(".slider").src = links;
+        }
+
+    </script>
+
+</body>
+</html>
